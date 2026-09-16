@@ -1,15 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Set Current Year in Footer
+    // Dynamic Year in Footer
     const yearSpan = document.getElementById('year');
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-    // Mobile Navigation Toggle
+    // Premium Mobile Navigation
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-link, .btn-nav');
 
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
@@ -17,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.toggle('active');
         });
 
-        // Close menu when a link is clicked
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
@@ -26,51 +23,49 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Sticky Header Scroll Effect
+    // Glassmorphism Header Scroll Logic
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
+        if (window.scrollY > 20) {
+            navbar.style.background = 'rgba(255, 255, 255, 0.9)';
+            navbar.style.boxShadow = '0 10px 30px -10px rgba(0,0,0,0.1)';
         } else {
-            navbar.classList.remove('scrolled');
+            navbar.style.background = 'rgba(255, 255, 255, 0.8)';
+            navbar.style.boxShadow = '0 2px 5px rgba(0,0,0,0.03)';
         }
     });
 
-    // Scroll Reveal Animations
-    const reveals = document.querySelectorAll('.reveal');
+    // High-Performance Scroll Reveal (Intersection Observer)
+    const revealElements = document.querySelectorAll('.reveal-up, .reveal-fade');
+    
     const revealOptions = {
-        threshold: 0.15,
+        threshold: 0.1,
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                return;
-            } else {
+            if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                observer.unobserve(entry.target);
+                observer.unobserve(entry.target); // Only animate once for premium feel
             }
         });
     }, revealOptions);
 
-    reveals.forEach(reveal => {
-        revealOnScroll.observe(reveal);
-    });
+    revealElements.forEach(el => revealObserver.observe(el));
 
-    // Active Navigation Link Highlighting based on scroll position
+    // Smooth Active Link Switching based on scroll
     const sections = document.querySelectorAll('section');
     window.addEventListener('scroll', () => {
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (scrollY >= (sectionTop - 200)) {
+            if (scrollY >= (sectionTop - 250)) {
                 current = section.getAttribute('id');
             }
         });
 
-        navLinks.forEach(link => {
+        document.querySelectorAll('.nav-link').forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === `#${current}`) {
                 link.classList.add('active');
