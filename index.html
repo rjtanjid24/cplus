@@ -3,288 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copper Plus Cables | Electrical Cable Solutions in Fulbaria, Mymensingh</title>
-    <meta name="description" content="Copper Plus Cables provides electrical cable solutions and Industrial Attachment Training opportunities for Diploma students in Fulbaria, Mymensingh.">
+    <title>Copper Plus Cables | Premium Electrical Solutions</title>
+    <meta name="description" content="Copper Plus Cables provides dependable electrical cable solutions and Industrial Attachment Training in Fulbaria, Mymensingh.">
     
-    <!-- Open Graph / Social -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Copper Plus Cables | Electrical Cable Solutions">
-    <meta property="og:description" content="Reliable electrical cable solutions and Industrial Attachment Training in Fulbaria, Mymensingh.">
-    <meta property="og:site_name" content="Copper Plus Cables">
-
-    <!-- Fonts -->
+    <!-- Fonts: Plus Jakarta Sans for a highly modern, premium geometric look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- CSS and JS -->
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Copper Plus Cables",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Chapdur Road, Valukjan Bazar",
-        "addressLocality": "Fulbaria",
-        "addressRegion": "Mymensingh",
-        "addressCountry": "Bangladesh"
-      },
-      "telephone": "01716-768622",
-      "email": "info.cpluscables@gmail.com"
-    }
-    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
-    <!-- Header & Navigation -->
+    <!-- Glassmorphism Navbar -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#home" class="logo-link" aria-label="Copper Plus Cables Home">
-                <img src="assets/logo.png" alt="Copper Plus Cables Logo" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                <span class="logo-fallback" style="display:none; font-weight: 700; color: var(--primary);">Copper Plus Cables</span>
+            <a href="#home" class="logo-link">
+                <img src="assets/logo.png" alt="Copper Plus Cables" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="logo-fallback" style="display:none;">COPPER PLUS</span>
             </a>
             
             <nav class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#products" class="nav-link">Products</a></li>
-                    <li><a href="#training" class="nav-link">Training</a></li>
-                    <li><a href="#safety" class="nav-link">Safety</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <a href="#contact" class="btn btn-primary nav-cta">Contact Us</a>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#training" class="nav-link">Training</a>
+                <a href="#contact" class="btn btn-nav">Contact Us</a>
             </nav>
 
-            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Premium Dark Hero Section -->
         <section id="home" class="hero">
+            <!-- Abstract Background Glow -->
+            <div class="hero-glow"></div>
             <div class="container hero-container">
-                <div class="hero-content reveal">
-                    <h1 class="hero-title">Reliable Cables.<br>Safer Connections.</h1>
-                    <p class="hero-bangla bangla-text">বিদ্যুৎ সাশ্রয়ী ও নিরাপদ</p>
-                    <p class="hero-desc">Copper Plus Cables is committed to providing dependable electrical cable solutions with safety and reliability at the core.</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Contact Us</a>
-                        <a href="#products" class="btn btn-secondary">Explore Our Services</a>
+                <div class="hero-content reveal-up">
+                    <div class="hero-badge">Industrial Grade Quality</div>
+                    <h1 class="hero-title">
+                        Reliable Cables.<br>
+                        <span class="text-gradient">Safer Connections.</span>
+                    </h1>
+                    <p class="hero-bangla">বিদ্যুৎ সাশ্রয়ী ও নিরাপদ</p>
+                    <p class="hero-desc">Committed to providing dependable electrical cable solutions with safety and reliability at the absolute core of our manufacturing.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Connect With Us</a>
+                        <a href="#products" class="btn btn-outline">Explore Products</a>
                     </div>
                 </div>
-                <div class="hero-visual reveal fade-right">
-                    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
-                        <circle cx="200" cy="200" r="180" fill="none" stroke="var(--primary)" stroke-width="2" stroke-dasharray="10 10" class="spin-slow" />
-                        <circle cx="200" cy="200" r="140" fill="none" stroke="var(--accent)" stroke-width="4" />
-                        <path d="M100,200 Q200,50 300,200 T100,200" fill="none" stroke="var(--primary)" stroke-width="6" class="pulse-path"/>
-                        <path d="M120,200 Q200,350 280,200" fill="none" stroke="var(--muted)" stroke-width="4"/>
-                        <circle cx="200" cy="200" r="60" fill="var(--primary)" />
-                        <circle cx="200" cy="200" r="30" fill="var(--background)" />
+                <div class="hero-visual reveal-fade">
+                    <!-- Abstract Premium SVG Illustration -->
+                    <svg viewBox="0 0 500 500" class="premium-svg" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="copperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#E11D48" />
+                                <stop offset="100%" stop-color="#F59E0B" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="250" cy="250" r="200" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2" />
+                        <circle cx="250" cy="250" r="150" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="10 10" class="spin-slow" />
+                        <path d="M 50 250 Q 250 50 450 250" fill="none" stroke="url(#copperGrad)" stroke-width="8" stroke-linecap="round" class="draw-path" />
+                        <path d="M 100 250 Q 250 400 400 250" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.3" stroke-linecap="round" />
+                        <circle cx="250" cy="250" r="80" fill="url(#copperGrad)" class="pulse-glow" />
+                        <circle cx="250" cy="250" r="30" fill="#061024" />
                     </svg>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about section-padding bg-light">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2>About Copper Plus Cables</h2>
-                    <div class="divider"></div>
+        <!-- Editorial About Section -->
+        <section id="about" class="about section-spacing">
+            <div class="container about-grid">
+                <div class="about-text reveal-up">
+                    <h2 class="section-title">Engineering <br>Trust & Safety</h2>
+                    <div class="title-line"></div>
+                    <p class="about-lead">Copper Plus Cables is an electrical cable-focused business based in Fulbaria, Mymensingh.</p>
+                    <p class="text-muted">With a focus on dependable electrical solutions, we aim to serve customers with products that prioritize safety, usability, and long-term reliability in everyday applications.</p>
                 </div>
-                <div class="about-card reveal">
-                    <p>Copper Plus Cables is an electrical cable-focused business based in Fulbaria, Mymensingh. With a focus on dependable electrical solutions, the company aims to serve customers with products that prioritize safety, usability and reliability.</p>
-                    <div class="location-badge">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        <p><strong>Factory Location:</strong> Chapdur Road, Valukjan Bazar, Fulbaria, Mymensingh</p>
+                <div class="about-card reveal-up delay-1">
+                    <div class="card-glass">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" class="mb-4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <h3>Our Facility</h3>
+                        <p>Operating locally to ensure strict quality monitoring and immediate availability.</p>
+                        <div class="address-box mt-4">
+                            <strong>Chapdur Road, Valukjan Bazar</strong><br>
+                            Fulbaria, Mymensingh
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Products Section -->
-        <section id="products" class="products section-padding">
+        <!-- Bento Box Products Section -->
+        <section id="products" class="products section-spacing bg-gray">
             <div class="container">
-                <div class="section-header reveal">
-                    <h2>Our Cable Solutions</h2>
-                    <div class="divider"></div>
-                </div>
-                <div class="grid-4">
-                    <div class="product-card reveal">
-                        <div class="icon-wrapper">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
-                        </div>
-                        <h3>Electrical Cables</h3>
-                        <p>Reliable cables for various daily electrical needs.</p>
-                    </div>
-                    <div class="product-card reveal delay-1">
-                        <div class="icon-wrapper">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line></svg>
-                        </div>
-                        <h3>Copper Solutions</h3>
-                        <p>Quality copper cores for steady conductivity.</p>
-                    </div>
-                    <div class="product-card reveal delay-2">
-                        <div class="icon-wrapper">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
-                        </div>
-                        <h3>Wiring Solutions</h3>
-                        <p>Practical wiring options for residential and commercial setups.</p>
-                    </div>
-                    <div class="product-card reveal delay-3">
-                        <div class="icon-wrapper">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
-                        </div>
-                        <h3>General Applications</h3>
-                        <p>Versatile products designed for everyday electrical applications.</p>
-                    </div>
-                </div>
-                <div class="product-notice reveal">
-                    <p>For product availability, specifications and application guidance, please contact us directly.</p>
-                    <a href="#contact" class="btn btn-primary mt-3">Contact for Details</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Choose Us -->
-        <section class="why-us section-padding bg-light">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2>Why Copper Plus Cables?</h2>
-                    <div class="divider"></div>
-                </div>
-                <div class="grid-3">
-                    <div class="feature-card reveal">
-                        <h4>Safety First</h4>
-                        <p>Safety remains central to our approach to electrical cable solutions.</p>
-                    </div>
-                    <div class="feature-card reveal delay-1">
-                        <h4>Reliable Solutions</h4>
-                        <p>Focused on dependable products for practical electrical applications.</p>
-                    </div>
-                    <div class="feature-card reveal delay-2">
-                        <h4>Local Presence</h4>
-                        <p>Serving customers from our facility in Fulbaria, Mymensingh.</p>
-                    </div>
-                    <div class="feature-card reveal delay-1">
-                        <h4>Customer Support</h4>
-                        <p>Contact us directly for product information and assistance.</p>
-                    </div>
-                    <div class="feature-card reveal delay-2">
-                        <h4>Practical Approach</h4>
-                        <p>Focused on useful, accessible electrical solutions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Training Section -->
-        <section id="training" class="training section-padding text-white">
-            <div class="container">
-                <div class="training-header reveal">
-                    <span class="badge">For Diploma Students</span>
-                    <h2>Learn Beyond the Classroom</h2>
-                    <p class="training-subtitle">Copper Plus Cables provides Industrial Attachment Training opportunities for Diploma students, helping them gain practical exposure to an industrial working environment.</p>
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">Our Cable Solutions</h2>
+                    <p class="subtitle">Precision engineered for practical applications</p>
                 </div>
                 
-                <div class="grid-2 mt-4">
-                    <div class="training-card reveal">
-                        <h4>Practical Exposure</h4>
-                        <p>Experience how an industrial workplace operates beyond the classroom.</p>
-                    </div>
-                    <div class="training-card reveal delay-1">
-                        <h4>Industry Environment</h4>
-                        <p>Gain exposure to real-world workplace practices and professional discipline.</p>
-                    </div>
-                    <div class="training-card reveal">
-                        <h4>Learning Opportunity</h4>
-                        <p>Connect academic learning with practical industrial experience.</p>
-                    </div>
-                    <div class="training-card reveal delay-1">
-                        <h4>Career Preparation</h4>
-                        <p>Develop familiarity with workplace expectations and professional environments.</p>
-                    </div>
-                </div>
-                <div class="training-cta reveal">
-                    <a href="mailto:info.cpluscables@gmail.com?subject=Industrial Attachment Training Inquiry" class="btn btn-secondary">Enquire About Training</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Safety Section -->
-        <section id="safety" class="safety section-padding">
-            <div class="container safety-container">
-                <div class="safety-content reveal">
-                    <h2>Safety Is Our Commitment</h2>
-                    <p class="bangla-text lead-bangla">বিদ্যুৎ সাশ্রয়ী ও নিরাপদ</p>
-                    <p>Electrical systems require careful product selection, proper installation and responsible use. We design our products keeping everyday safety in mind.</p>
-                </div>
-                <div class="safety-visual reveal fade-right">
-                    <svg viewBox="0 0 200 200" class="shield-svg">
-                        <path d="M100 10 L180 40 V100 C180 150 100 190 100 190 C100 190 20 150 20 100 V40 Z" fill="none" stroke="var(--primary)" stroke-width="8"/>
-                        <path d="M100 40 L100 160" stroke="var(--accent)" stroke-width="4" stroke-dasharray="8 8"/>
-                        <path d="M60 100 L140 100" stroke="var(--accent)" stroke-width="4"/>
-                        <circle cx="100" cy="100" r="20" fill="var(--primary)"/>
-                    </svg>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-padding bg-light">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2>Let’s Connect</h2>
-                    <div class="divider"></div>
-                    <p class="mt-2">Have a question about our cables or Industrial Attachment Training?</p>
-                </div>
-                
-                <div class="contact-grid">
-                    <div class="contact-info reveal">
-                        <h3>Copper Plus Cables</h3>
-                        <div class="info-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            <div>
-                                <strong>Factory Address:</strong>
-                                <p>Chapdur Road, Valukjan Bazar,<br>Fulbaria, Mymensingh,<br>Bangladesh</p>
-                            </div>
+                <div class="bento-grid mt-10">
+                    <!-- Large Feature Card -->
+                    <div class="bento-card large-card reveal-up">
+                        <div class="bento-content">
+                            <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg></div>
+                            <h3>Electrical Cables</h3>
+                            <p>Our core range of reliable electrical cables designed for diverse daily requirements, ensuring steady power flow.</p>
                         </div>
-                        <div class="info-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                            <div>
-                                <strong>Phone:</strong>
-                                <p><a href="tel:01716768622">01716-768622</a><br><a href="tel:01712629623">01712-629623</a></p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            <div>
-                                <strong>Email:</strong>
-                                <p><a href="mailto:info.cpluscables@gmail.com">info.cpluscables@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-actions mt-3">
-                            <a href="tel:01716768622" class="btn btn-primary">Call Now</a>
-                            <a href="mailto:info.cpluscables@gmail.com?subject=Copper Plus Cables Inquiry" class="btn btn-secondary" style="border: 1px solid var(--primary); color: var(--primary); background: transparent;">Email Us</a>
-                        </div>
+                        <div class="bento-visual bg-gradient-1"></div>
                     </div>
                     
-                    <div class="location-card reveal fade-right">
-                        <div class="map-placeholder">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            <h4>Visit Our Factory</h4>
+                    <!-- Standard Cards -->
+                    <div class="bento-card reveal-up delay-1">
+                        <div class="bento-content">
+                            <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle></svg></div>
+                            <h3>Copper Cores</h3>
+                            <p>Quality copper solutions maximizing conductivity.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card reveal-up delay-2">
+                        <div class="bento-content">
+                            <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3z"></path></svg></div>
+                            <h3>Wiring Options</h3>
+                            <p>Practical wiring for residential & commercial setups.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-prompt reveal-up mt-10">
+                    <p>For detailed product specifications, availability, and application guidance:</p>
+                    <a href="#contact" class="btn btn-dark mt-4">Contact Our Sales Team</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Training Banner -->
+        <section id="training" class="training section-spacing">
+            <div class="container">
+                <div class="training-banner reveal-up">
+                    <div class="training-content">
+                        <span class="tag">Exclusive Initiative</span>
+                        <h2>Industrial Attachment Training</h2>
+                        <p>Designed specifically for Diploma in Engineering students. We bridge the gap between academic theory and real-world industrial practice.</p>
+                        <ul class="benefit-list">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Practical Factory Exposure</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Professional Work Discipline</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Industry Environment Familiarity</li>
+                        </ul>
+                        <a href="mailto:info.cpluscables@gmail.com?subject=Industrial Attachment Training Inquiry" class="btn btn-primary mt-6">Enquire About Training</a>
+                    </div>
+                    <div class="training-graphics">
+                        <!-- CSS Geometric shapes replacing images -->
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Minimalist Contact Section -->
+        <section id="contact" class="contact section-spacing bg-gray">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-text reveal-up">
+                        <h2 class="section-title">Let’s Connect</h2>
+                        <p class="subtitle">Have a question about our cables or Training programs? Reach out directly to our facility.</p>
+                        
+                        <div class="contact-methods mt-8">
+                            <a href="tel:01716768622" class="method-card">
+                                <div class="method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p>01716-768622<br>01712-629623</p>
+                                </div>
+                            </a>
+                            <a href="mailto:info.cpluscables@gmail.com" class="method-card">
+                                <div class="method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>info.cpluscables@gmail.com</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-map reveal-up delay-1">
+                        <div class="map-card">
+                            <div class="map-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <h3>Visit Our Factory</h3>
                             <p>Chapdur Road, Valukjan Bazar,<br>Fulbaria, Mymensingh</p>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Chapdur+Road,+Valukjan+Bazar,+Fulbaria,+Mymensingh,+Bangladesh" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-2">Open in Google Maps</a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Chapdur+Road,+Valukjan+Bazar,+Fulbaria,+Mymensingh,+Bangladesh" target="_blank" class="btn btn-outline-dark mt-4">Open in Google Maps</a>
                         </div>
                     </div>
                 </div>
@@ -292,34 +208,25 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Sleek Footer -->
     <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <h3>Copper Plus Cables</h3>
-                <p class="tagline">"Your Safety Is Our Commitment"</p>
-                <p class="bangla-text mt-1 text-muted">বিদ্যুৎ সাশ্রয়ী ও নিরাপদ</p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>Copper Plus Cables</h2>
+                    <p class="tagline">"Your Safety Is Our Commitment"</p>
+                    <p class="bangla-tag">বিদ্যুৎ সাশ্রয়ী ও নিরাপদ</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#products">Products</a>
+                    <a href="#training">Training</a>
+                </div>
             </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#training">Training</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact Details</h4>
-                <p>Chapdur Road, Valukjan Bazar,<br>Fulbaria, Mymensingh</p>
-                <p>Phone: 01716-768622, 01712-629623</p>
-                <p>Email: info.cpluscables@gmail.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container text-center">
+            <div class="footer-bottom">
                 <p>&copy; <span id="year">2026</span> Copper Plus Cables. All rights reserved.</p>
+                <p class="location-text">Mymensingh, Bangladesh</p>
             </div>
         </div>
     </footer>
