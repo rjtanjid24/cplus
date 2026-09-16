@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Dynamic Year in Footer
+    // Set Current Year in Footer
     const yearSpan = document.getElementById('year');
-    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 
-    // Premium Mobile Navigation
+    // Mobile Navigation Toggle
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
-    const navLinks = document.querySelectorAll('.nav-link, .btn-nav');
+    const navLinks = document.querySelectorAll('.nav-link');
 
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
@@ -15,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.toggle('active');
         });
 
+        // Close menu when a link is clicked
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
@@ -23,49 +26,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Glassmorphism Header Scroll Logic
+    // Sticky Header Scroll Effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 20) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.9)';
-            navbar.style.boxShadow = '0 10px 30px -10px rgba(0,0,0,0.1)';
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
         } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.8)';
-            navbar.style.boxShadow = '0 2px 5px rgba(0,0,0,0.03)';
+            navbar.classList.remove('scrolled');
         }
     });
 
-    // High-Performance Scroll Reveal (Intersection Observer)
-    const revealElements = document.querySelectorAll('.reveal-up, .reveal-fade');
-    
+    // Scroll Reveal Animations
+    const reveals = document.querySelectorAll('.reveal');
     const revealOptions = {
-        threshold: 0.1,
+        threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const revealObserver = new IntersectionObserver((entries, observer) => {
+    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
                 entry.target.classList.add('active');
-                observer.unobserve(entry.target); // Only animate once for premium feel
+                observer.unobserve(entry.target);
             }
         });
     }, revealOptions);
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    reveals.forEach(reveal => {
+        revealOnScroll.observe(reveal);
+    });
 
-    // Smooth Active Link Switching based on scroll
+    // Active Navigation Link Highlighting based on scroll position
     const sections = document.querySelectorAll('section');
     window.addEventListener('scroll', () => {
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            if (scrollY >= (sectionTop - 250)) {
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= (sectionTop - 200)) {
                 current = section.getAttribute('id');
             }
         });
 
-        document.querySelectorAll('.nav-link').forEach(link => {
+        navLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === `#${current}`) {
                 link.classList.add('active');
